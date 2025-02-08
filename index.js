@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Routes
+app.get("/api/home", (req, res) => {
+  res.status(200).json("Welcome, your app is working well");
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/profile", profileRoutes);
 app.use("/uploads", express.static("uploads"));
