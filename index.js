@@ -22,7 +22,7 @@ app.get("/api/home", (req, res) => {
 });
 app.get("/api/auth", authRoutes);
 app.get("/api/profile", profileRoutes);
-app.get("/uploads", express.static("uploads"));
+// app.get("/uploads", express.static("uploads"));
 app.get("/api/likes", likesRoutes);
 app.get("/api/chat", chatRoutes);
 
